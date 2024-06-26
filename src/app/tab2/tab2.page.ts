@@ -23,7 +23,6 @@ export class Tab2Page {
   }
 
   openHospitalizationDetail(hospitalRecord: any) {
-    console.log(hospitalRecord);
     this.router.navigate(['/covid-hospitalization-icu', hospitalRecord._id]); // Navigate to /items/:id
   }
 
