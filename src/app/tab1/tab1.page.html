@@ -1,7 +1,7 @@
 <ion-header [translucent]="true">
   <ion-toolbar>
     <ion-title>
-      Tab 1
+      Canada Summary
     </ion-title>
   </ion-toolbar>
 </ion-header>
@@ -9,9 +9,18 @@
 <ion-content [fullscreen]="true">
   <ion-header collapse="condense">
     <ion-toolbar>
-      <ion-title size="large">Tab 1</ion-title>
+      <ion-title size="large">Canada Summary</ion-title>
     </ion-toolbar>
   </ion-header>
 
-  <app-explore-container name="Tab 1 page"></app-explore-container>
+    <app-key-updates></app-key-updates>
+    <app-status-of-cases></app-status-of-cases>
+
+    <ion-card>
+      <ion-card-content>
+        Sources: https://data.ontario.ca/en/dataset/status-of-covid-19-cases-in-ontario/resource/ed270bb8-340b-41f9-a7c6-e8ef587e6d11 as of 2024-06-15
+        https://health-infobase.canada.ca/covid-19/current-situation.html?stat=num&measure=deaths_total&map=pt#a2 as of 2023-04-04
+        https://data.ontario.ca/dataset/covid-19-cases-in-hospital-and-icu-by-ontario-health-region/resource/e760480e-1f95-4634-a923-98161cfb02fa
+      </ion-card-content>
+    </ion-card>
 </ion-content>

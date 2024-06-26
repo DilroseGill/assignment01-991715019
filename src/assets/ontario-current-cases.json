@@ -1,0 +1,12 @@
+{
+    "ReportedDate": "2023-04-04T00:00:00",
+    "ConfirmedNegative": "",
+    "PresumptiveNegative": "",
+    "PresumptivePositive": "",
+    "ConfirmedPositive": "4770",
+    "Resolved": "1587996",
+    "DeathsNewMethodology": "16404",
+    "TotalCases": "1609170",
+    "NumPatientsHospitalizedCOVID19": "812",
+    "NumPatientsInICUCOVID19": "80"
+}

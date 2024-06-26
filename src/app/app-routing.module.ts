@@ -5,6 +5,10 @@ const routes: Routes = [
   {
     path: '',
     loadChildren: () => import('./tabs/tabs.module').then(m => m.TabsPageModule)
+  },
+  {
+    path: 'covid-hospitalization-icu',
+    loadChildren: () => import('./covid-hospitalization-icu/covid-hospitalization-icu.module').then( m => m.CovidHospitalizationIcuPageModule)
   }
 ];
 @NgModule({

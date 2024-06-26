@@ -1,0 +1,39 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-back-button></ion-back-button>
+   </ion-buttons>
+    <ion-title>Covid 19 Hospitalization Data</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <ion-header collapse="condense">
+    <ion-toolbar>
+      <ion-buttons slot="start">
+        <ion-back-button></ion-back-button>
+     </ion-buttons>
+      <ion-title size="large">Covid 19 Hospitalization Data</ion-title>
+    </ion-toolbar>
+  </ion-header>
+
+  <app-status-of-cases></app-status-of-cases>
+
+  <ion-card color="primary">
+    <ion-card-content>
+      <p>Date: {{ record.date }}</p>
+      <p>ICU COVID 19 cases: {{ record.icu_current_covid }}</p>
+      <p>Hospitalizations: {{ record.hospitalizations }}</p>
+      <p>Deaths: {{ record.hospitalizations }}</p>
+      <p>Total ICU cases: {{ record.icu_crci_total }}</p>
+      <p>ICU cases that had covid before: {{ record.icu_former_covid }}</p>
+    </ion-card-content>
+    </ion-card>
+
+    <ion-card>
+      <ion-card-content>
+        <ion-input [(ngModel)]="msg" type="text" placeholder="Enter message"></ion-input>
+        <ion-button (click)="sendMessage()">Send Message</ion-button>
+      </ion-card-content>
+    </ion-card>
+</ion-content>
